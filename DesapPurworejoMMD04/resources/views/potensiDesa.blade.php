@@ -6,7 +6,7 @@
 <section class="relative w-full h-[600px] overflow-hidden flex items-center">
     <div class="absolute inset-0 bg-cover bg-center animate-[zoomOut_8s_ease-out_forwards]"
         style="background-image: url('{{ asset('images/foto.png') }}')"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0D6B1E]/80 to-[#1a4a2e]/70"></div>
 
     <div class="relative z-10 text-white px-6 max-w-6xl mx-auto w-full animate-[fadeInUp_1s_ease-out_forwards]">
         <div class="max-w-2xl">
@@ -25,7 +25,7 @@
 </section>
 
 {{-- ===================== TENTANG PURWOREJO ===================== --}}
-<section id="tentang" class="bg-[#0f2a17] py-20 px-6">
+<section id="tentang" class="bg-white py-20 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div class="relative">
             <img src="{{ asset('images/foto.png') }}" alt="Sawah Desa Purworejo"
