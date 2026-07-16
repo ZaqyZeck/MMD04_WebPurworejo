@@ -69,13 +69,14 @@
         <div class="max-w-6xl mx-auto">
             <!-- Kepala Desa -->
             <div class="flex justify-center mb-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-600 w-full max-w-xs sm:w-64">
+                <!-- <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-600 w-full max-w-xs sm:w-64">
                     <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                         <img src="{{ asset('images/foto.png') }}" alt="Jarno" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-bold text-lg text-gray-900">Jarno</h3>
                     <p class="text-green-600 text-sm font-semibold">Kepala Desa</p>
-                </div>
+                </div> -->
+                <x-member-card foto="images/foto.png" warna="hijauTua" nama="Jarno" jabatan="Kepala Desa" lebarCard="px-24 py-6"/>
             </div>
 
             <!-- Connector Line -->
@@ -85,13 +86,15 @@
 
             <!-- Sekretaris Desa -->
             <div class="flex justify-center mb-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-500 w-full max-w-xs sm:w-64">
+                <!-- <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-500 w-full max-w-xs sm:w-64">
                     <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                         <img src="{{ asset('images/foto.png') }}" alt="Lulus Gunawan" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-bold text-lg text-gray-900">Lulus Gunawan</h3>
                     <p class="text-green-600 text-sm font-semibold">Sekretaris Desa</p>
-                </div>
+                </div> -->
+                <x-member-card foto="images/foto.png" warna="hijauTua" nama="Lulus Gunawan" jabatan="Sekretaris Desa" lebarCard="px-20 py-6"/>
+
             </div>
 
             <!-- Connector Line -->
@@ -101,29 +104,12 @@
 
             <!-- Row 1: Kasi -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-400">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Radyan Mifta R." class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Radyan Mifta R.</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kasi Pemerintahan</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="hijau" nama="Radyan Mifta R." jabatan="Kasi Pemerintahan"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-400">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Catur Waluyo" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Catur Waluyo</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kasi Kesejahteraan</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="hijau" nama="Catur Waluyo" jabatan="Kasi Kesejahteraan"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-green-400 sm:col-span-2 md:col-span-1">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Ezhandwhi Arie" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Ezhandwhi Arie</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kasi Pelayanan</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="hijau" nama="Ezhandwhi Arie" jabatan="Kasi Pelayanan"/>
+
             </div>
 
             <!-- Connector Line -->
@@ -133,29 +119,12 @@
 
             <!-- Row 2: Kaur -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-blue-400">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Ayu Nila Sari" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Ayu Nila Sari</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kaur TU & Umum</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="biru" nama="Ayu Nila Sari" jabatan="Kaur TU & Umum"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-blue-400">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Evi Yuni Fitriana" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Evi Yuni Fitriana</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kaur Keuangan</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="biru" nama="Evi Yuni Fitriana" jabatan="Kaur Keuangan"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-blue-400 sm:col-span-2 md:col-span-1">
-                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Andik Eko Untoro" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900">Andik Eko Untoro</h3>
-                    <p class="text-green-600 text-sm font-semibold">Kaur Perencanaan</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="biru" nama="Andik Eko Untoro" jabatan="Kaur Perencanaan"/>
+
             </div>
 
             <!-- Connector Line -->
@@ -165,37 +134,14 @@
 
             <!-- Row 3: Kamituwo -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-yellow-400">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full mx-auto mb-3 sm:mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Wahyudiono" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm">Wahyudiono</h3>
-                    <p class="text-green-600 text-xs font-semibold">Kamituwo Dusun Sumberdadi</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="kuning" nama="Wahyudiono" jabatan="Kamituwo Dusun Sumberdadi" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
+                
+                <x-member-card foto="images/foto.png" warna="kuning" nama="Iswanto" jabatan="Kamituwo Dusun Sumberurip" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-yellow-400">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full mx-auto mb-3 sm:mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Iswanto" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm">Iswanto</h3>
-                    <p class="text-green-600 text-xs font-semibold">Kamituwo Dusun Sumberurip</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="kuning" nama="Prasetyadi" jabatan="Kamituwo Dusun Sumberasri" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-yellow-400">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full mx-auto mb-3 sm:mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Prasetyadi" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm">Prasetyadi</h3>
-                    <p class="text-green-600 text-xs font-semibold">Kamituwo Dusun Sumberasri</p>
-                </div>
+                <x-member-card foto="images/foto.png" warna="kuning" nama="Sutrisno" jabatan="Kamituwo Dusun Sumberejo" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
 
-                <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1 border-t-4 border-yellow-400">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-200 rounded-full mx-auto mb-3 sm:mb-4 overflow-hidden">
-                        <img src="{{ asset('images/foto.png') }}" alt="Sutrisno" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-gray-900 text-sm">Sutrisno</h3>
-                    <p class="text-green-600 text-xs font-semibold">Kamituwo Dusun Sumberejo</p>
-                </div>
             </div>
         </div>
     </div>
@@ -221,83 +167,11 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- RW 01 -->
-            <div class="bg-white rounded-xl outline outline-1 outline-stone-300 p-6 sm:p-8 md:p-12 flex flex-col gap-6">
-                <div class="flex justify-between items-start gap-4">
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-semibold text-zinc-900 leading-8">RW 01</h3>
-                        <p class="text-neutral-700 text-sm sm:text-base leading-6">Dusun Purwosari</p>
-                    </div>
-                    <span class="px-3 py-1 bg-green-300 rounded-full text-green-800 text-xs font-semibold leading-4 shrink-0">Aktif</span>
-                </div>
-                <div class="flex flex-col gap-3 pb-6">
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-                        <span class="text-zinc-900 text-sm sm:text-base font-bold leading-6">Bp. Ahmad Junaedi</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">0812-3456-XXXX</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-5 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">4 RT Terintegrasi</span>
-                    </div>
-                </div>
-                <button class="w-full py-3 rounded-lg outline outline-1 outline-green-900 text-green-900 text-base font-bold leading-6 hover:bg-green-50 transition">Hubungi Pengurus</button>
-            </div>
+            <x-directory-card rw="RW 01" dusun="Dusun Purwosari" ketua="Bp. Ahmad Junaedi" telepon="0812-3456-XXXX" rt="4 RT Terintegrasi" />
 
-            <!-- RW 02 -->
-            <div class="bg-white rounded-xl outline outline-1 outline-stone-300 p-6 sm:p-8 md:p-12 flex flex-col gap-6">
-                <div class="flex justify-between items-start gap-4">
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-semibold text-zinc-900 leading-8">RW 02</h3>
-                        <p class="text-neutral-700 text-sm sm:text-base leading-6">Dusun Mulyosari</p>
-                    </div>
-                    <span class="px-3 py-1 bg-green-300 rounded-full text-green-800 text-xs font-semibold leading-4 shrink-0">Aktif</span>
-                </div>
-                <div class="flex flex-col gap-3 pb-6">
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-                        <span class="text-zinc-900 text-sm sm:text-base font-bold leading-6">Bp. Kusuma Atmaja</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">0821-4567-XXXX</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-5 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">5 RT Terintegrasi</span>
-                    </div>
-                </div>
-                <button class="w-full py-3 rounded-lg outline outline-1 outline-green-900 text-green-900 text-base font-bold leading-6 hover:bg-green-50 transition">Hubungi Pengurus</button>
-            </div>
+            <x-directory-card rw="RW 02" dusun="Dusun Mulyosari" ketua="Bp. Kusuma Atmaja" telepon="0821-4567-XXXX" rt="5 RT Terintegrasi" />
 
-            <!-- RW 03 -->
-            <div class="bg-white rounded-xl outline outline-1 outline-stone-300 p-6 sm:p-8 md:p-12 flex flex-col gap-6 sm:col-span-2 md:col-span-1">
-                <div class="flex justify-between items-start gap-4">
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-semibold text-zinc-900 leading-8">RW 03</h3>
-                        <p class="text-neutral-700 text-sm sm:text-base leading-6">Dusun Rejoagung</p>
-                    </div>
-                    <span class="px-3 py-1 bg-green-300 rounded-full text-green-800 text-xs font-semibold leading-4 shrink-0">Aktif</span>
-                </div>
-                <div class="flex flex-col gap-3 pb-6">
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-                        <span class="text-zinc-900 text-sm sm:text-base font-bold leading-6">Bp. Hendro Sasmito</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-4 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">0857-7890-XXXX</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <svg class="w-4 h-5 text-green-900 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/></svg>
-                        <span class="text-neutral-700 text-sm sm:text-base leading-6">6 RT Terintegrasi</span>
-                    </div>
-                </div>
-                <button class="w-full py-3 rounded-lg outline outline-1 outline-green-900 text-green-900 text-base font-bold leading-6 hover:bg-green-50 transition">Hubungi Pengurus</button>
-            </div>
+            <x-directory-card rw="RW 03" dusun="Dusun Rejoagung" ketua="Bp. Hendro Sasmito" telepon="0857-7890-XXXX" rt="6 RT Terintegrasi" :span="true" />
         </div>
     </div>
 </section>
@@ -312,7 +186,7 @@
         <!-- Row 1: BPD & PKK -->
         <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 sm:gap-10 md:gap-20">
             <!-- BPD -->
-            <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12 overflow-hidden">
+            <!-- <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12 overflow-hidden">
                 <div class="w-40 sm:w-52 md:w-60 aspect-square rounded-lg overflow-hidden shrink-0">
                     <img src="{{ asset('images/foto.png') }}" class="w-full h-full object-cover">
                 </div>
@@ -329,10 +203,11 @@
                         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <x-institution-card nama="BPD" subjudul="Badan Permusyawaratan Desa" deskripsi="Mengawasi kinerja Pemerintah Desa dan menyalurkan aspirasi masyarakat untuk perencanaan." :tags="['9 Anggota', 'Legislatif']" link="#" linkLabel="Profil & Agenda" />
 
             <!-- PKK -->
-            <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12 overflow-hidden">
+            <!-- <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12 overflow-hidden">
                 <div class="w-40 sm:w-52 md:w-64 aspect-square rounded-lg overflow-hidden shrink-0">
                     <img src="{{ asset('images/foto.png') }}" class="w-full h-full object-cover">
                 </div>
@@ -349,13 +224,14 @@
                         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <x-institution-card nama="PKK" subjudul="Pemberdayaan Kesejahteraan Keluarga" deskripsi="Meningkatkan kesejahteraan keluarga melalui 10 Program Pokok PKK." :tags="['Posyandu Aktif', 'UMKM Binaan']" link="#" linkLabel="Kegiatan Terkini" />
         </div>
 
         <!-- Row 2: LPMD & Karang Taruna -->
         <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 sm:gap-10 md:gap-20">
             <!-- LPMD -->
-            <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12">
+            <!-- <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12">
                 <div class="w-40 sm:w-44 md:w-52 aspect-square rounded-lg overflow-hidden shrink-0">
                     <img src="{{ asset('images/foto.png') }}" class="w-full h-full object-cover">
                 </div>
@@ -368,10 +244,11 @@
                         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <x-institution-card nama="LPMD" subjudul="Lembaga Pemberdayaan Masyarakat Desa" deskripsi="Mitra pemerintah dalam merencanakan, melaksanakan, dan melestarikan hasil pembangunan." link="#" linkLabel="Laporan Pembangunan" lebarFoto="w-40 sm:w-44 md:w-52" />
 
             <!-- Karang Taruna -->
-            <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12">
+            <!-- <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12">
                 <div class="w-40 sm:w-44 md:w-48 aspect-square rounded-lg overflow-hidden shrink-0">
                     <img src="{{ asset('images/foto.png') }}" class="w-full h-full object-cover">
                 </div>
@@ -384,7 +261,8 @@
                         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <x-institution-card nama="Karang Taruna" subjudul="Organisasi Kepemudaan" deskripsi="Wadah pengembangan generasi muda Desa Purworejo melalui kegiatan olahraga, seni, dan sosial." link="#" linkLabel="Program Kepemudaan" lebarFoto="w-40 sm:w-44 md:w-48" />
         </div>
     </div>
 </section>
