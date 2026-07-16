@@ -3,7 +3,7 @@
     'kategori' => null,
     'judul',
     'deskripsi',
-    'labelTombol' => 'tombol',
+    'labelTombol' => 'Lihat Lokasi',
     'warnaTombol' => 'hijau',
     'link' => '#',
 ])

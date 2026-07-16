@@ -6,7 +6,7 @@
 <section class="relative w-full h-[600px] overflow-hidden flex items-center">
     <div class="absolute inset-0 bg-cover bg-center animate-[zoomOut_8s_ease-out_forwards]"
         style="background-image: url('{{ asset('images/foto.png') }}')"></div>
-    <div class="absolute inset-0 bg-gradient-to-br from-[#0D6B1E]/80 to-[#1a4a2e]/70"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
 
     <div class="relative z-10 text-white px-6 max-w-6xl mx-auto w-full animate-[fadeInUp_1s_ease-out_forwards]">
         <div class="max-w-2xl">
@@ -25,18 +25,18 @@
 </section>
 
 {{-- ===================== TENTANG PURWOREJO ===================== --}}
-<section id="tentang" class="bg-white py-20 px-6">
+<section id="tentang" class="bg-[#FCF9F8] py-20 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div class="relative">
             <img src="{{ asset('images/foto.png') }}" alt="Sawah Desa Purworejo"
                 class="rounded-2xl shadow-xl w-full object-cover h-[380px]">
         </div>
         <div>
-            <x-badge>Tentang Purworejo</x-badge>
-            <h2 class="text-3xl md:text-4xl font-bold text-white mt-4 mb-4 leading-snug">
+            <x-badge warna="hijau">Tentang Purworejo</x-badge>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0D6B1E] mt-4 mb-4 leading-snug">
                 Sumber Daya Alam yang Melimpah
             </h2>
-            <p class="text-white/70 leading-relaxed mb-8">
+            <p class="text-gray-600 leading-relaxed mb-8">
                 Desa Purworejo merupakan kawasan agraris yang diberkati dengan tanah vulkanik yang subur dan sistem irigasi berkelanjutan. Kami menggabungkan tradisi turun-temurun dengan teknik pertanian modern untuk menghasilkan komoditas kualitas premium yang menjadi tulang punggung ekonomi warga.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -48,7 +48,7 @@
 </section>
 
 {{-- ===================== STATISTIK POTENSI ===================== --}}
-<section class="bg-gray-50 py-16 px-6">
+<section class="bg-[#F6F3F2] py-16 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
         <x-stat-card ikon="🏪" angka="150+" label="UMKM Aktif" />
         <x-stat-card ikon="📐" angka="420" label="Hektar Lahan" />
@@ -58,11 +58,12 @@
 </section>
 
 {{-- ===================== KOMODITAS UNGGULAN ===================== --}}
-<section id="komoditas" class="bg-[#0f2a17] py-20 px-6">
+<section id="komoditas" class="bg-[#FCF9F8] py-20 px-6">
     <div class="max-w-6xl mx-auto">
         <x-section-header
             judul="Komoditas Unggulan"
             subjudul="Produk pertanian pilihan dari tanah Desa Purworejo yang telah menembus pasar regional dan nasional."
+            warnaJudul="text-[#0D6B1E]"
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <x-potensi.commodity-card ikon="🌾" judul="Padi Premium" warna="hijau"
@@ -82,7 +83,7 @@
     <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">Ekosistem UMKM</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0D6B1E] mb-3">Ekosistem UMKM</h2>
                 <p class="text-gray-500 max-w-xl">Produk lokal berkualitas dari tangan terampil warga Desa Purworejo.</p>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -118,7 +119,7 @@
 </section>
 
 {{-- ===================== DESTINASI WISATA ===================== --}}
-<section class="bg-[#0f2a17] py-20 px-6">
+<section class="bg-[#FCF9F8] py-20 px-6">
     <div class="max-w-6xl mx-auto">
         <x-section-header
             judul="Destinasi Wisata"
@@ -138,9 +139,9 @@
 </section>
 
 {{-- ===================== KEBUDAYAAN LOKAL ===================== --}}
-<section class="bg-gray-50 py-20 px-6">
+<section class="bg-[#F6F3F2] py-20 px-6">
     <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Kebudayaan Lokal</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0D6B1E] mb-12">Kebudayaan Lokal</h2>
         <div class="space-y-14">
             <x-potensi.culture-card
                 foto="images/foto.png"
@@ -159,9 +160,9 @@
 </section>
 
 {{-- ===================== GALERI KEGIATAN ===================== --}}
-<section class="bg-[#0f2a17] py-20 px-6">
+<section class="bg-[#FCF9F8] py-20 px-6">
     <div class="max-w-6xl mx-auto">
-        <x-section-header judul="Galeri Kegiatan" />
+        <x-section-header judul="Galeri Kegiatan" warnaJudul="text-[#0D6B1E]"/>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             @foreach([
                 ['src' => 'images/foto.png', 'alt' => 'Panen Raya'],
@@ -182,19 +183,38 @@
 </section>
 
 {{-- ===================== AJAKAN KOLABORASI ===================== --}}
-<section class="bg-gradient-to-br from-[#0D6B1E] to-[#1a4a2e] py-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
-            Mari Bersama Mengembangkan Potensi Desa Purworejo
+<section class="bg-white py-20 px-6">
+
+    <div class="max-w-5xl mx-auto rounded-3xl bg-gradient-to-r from-[#0D6B1E] via-[#17772A] to-[#2E8C3E] px-8 md:px-16 py-14 text-center shadow-xl">
+        <h2 class="text-3xl md:text-5xl font-bold text-white leading-tight">
+            Mari Bersama Mengembangkan
+            <br>
+            Potensi Desa Purworejo
         </h2>
-        <p class="text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Kami membuka peluang kolaborasi bagi investor, akademisi, dan wisatawan untuk ikut serta dalam pertumbuhan desa kami.
+
+        <p class="mt-5 text-white/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            Kami membuka peluang kolaborasi bagi investor, akademisi,
+            serta wisatawan untuk ikut serta dalam pertumbuhan desa kami.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <x-btn href="/kontak" varian="putih">✉️ Hubungi Kami</x-btn>
-            <x-btn href="/proposal" varian="garis">Proposal Kerja Sama ⬇</x-btn>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="/kontak" class="inline-flex items-center gap-2 rounded-full bg-[#FFE8C7] text-gray-900 font-semibold px-7 py-3 shadow transition hover:scale-105">
+                Hubungi Kami
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M13 5l7 7-7 7"/>
+                </svg>
+            </a>
+
+            <a href="/proposal" class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-white font-semibold px-7 py-3 transition hover:bg-white/20">
+                Proposal Kerja Sama
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </a>
         </div>
     </div>
+
 </section>
 
 @push('styles')
