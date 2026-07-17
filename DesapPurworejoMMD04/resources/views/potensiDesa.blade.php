@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- ===================== HERO SECTION ===================== --}}
-<section class="relative w-full h-[600px] overflow-hidden flex items-center">
+<!-- <section class="relative w-full h-[600px] overflow-hidden flex items-center">
     <div class="absolute inset-0 bg-cover bg-center animate-[zoomOut_8s_ease-out_forwards]"
         style="background-image: url('{{ asset('images/foto.png') }}')"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
@@ -14,6 +14,27 @@
                 Potensi Desa Purworejo
             </h1>
             <p class="text-base md:text-lg text-white/85 mb-10 leading-relaxed">
+                Pusat inovasi ekonomi lokal dan pelestarian warisan budaya yang harmonis. Temukan kekayaan alam, kreativitas UMKM, dan kearifan lokal kami yang mendunia.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <x-btn href="#komoditas" varian="utama">Jelajahi Potensi ↓</x-btn>
+                <x-btn href="#video" varian="putih">Video Profil</x-btn>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="relative w-full h-[600px] overflow-hidden flex items-center">
+    <div class="absolute inset-0 bg-cover bg-center animate-[zoomOut_8s_ease-out_forwards]"
+        style="background-image: url('{{ asset('images/foto.png') }}')"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0D6B1E]/80 to-[#1a4a2e]/70"></div>
+
+    <div class="relative z-10 text-white px-4 sm:px-8 lg:px-[70px] max-w-[1400px] mx-auto w-full animate-[fadeInUp_1s_ease-out_forwards]">
+        <div class="max-w-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 sm:mb-5 drop-shadow-lg">
+                Potensi Desa Purworejo
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-white/85 mb-6 sm:mb-10 leading-relaxed">
                 Pusat inovasi ekonomi lokal dan pelestarian warisan budaya yang harmonis. Temukan kekayaan alam, kreativitas UMKM, dan kearifan lokal kami yang mendunia.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">

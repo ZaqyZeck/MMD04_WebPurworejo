@@ -8,12 +8,27 @@
         style="background-image: url('{{ asset('images/foto.png') }}')"></div>
     <div class="absolute inset-0 bg-gradient-to-br from-[#0D6B1E]/80 to-[#1a4a2e]/70"></div>
 
-    <div class="container mx-auto px-4 relative z-10">
+    <div class="relative z-10 text-white px-4 sm:px-8 lg:px-[70px] max-w-[1400px] mx-auto w-full animate-[fadeInUp_1s_ease-out_forwards]">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 sm:mb-6">Pemerintahan Desa</h1>
         <p class="text-base sm:text-lg md:text-xl max-w-3xl text-green-50">
             Mengenal struktur pemerintahan Desa Purworejo yang berkomitmen memberikan pelayanan terbaik kepada masyarakat.
         </p>
     </div>
+<!-- 
+    <div class="relative z-10 text-white px-6 max-w-6xl mx-auto w-full animate-[fadeInUp_1s_ease-out_forwards]">
+        <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-5 drop-shadow-lg">
+                Pemerintahan Desa
+            </h1>
+            <p class="text-base md:text-lg text-white/85 mb-10 leading-relaxed">
+                Mengenal struktur pemerintahan Desa Purworejo yang berkomitmen memberikan pelayanan terbaik kepada masyarakat.
+            </p>
+            <!-- <div class="flex flex-col sm:flex-row gap-4">
+                <x-btn href="#komoditas" varian="utama">Jelajahi Potensi ↓</x-btn>
+                <x-btn href="#video" varian="putih">Video Profil</x-btn>
+            </div> -->
+        </div>
+    </div> -->
 
 </section>
 
@@ -245,7 +260,7 @@
                     </a>
                 </div>
             </div> -->
-            <x-institution-card nama="LPMD" subjudul="Lembaga Pemberdayaan Masyarakat Desa" deskripsi="Mitra pemerintah dalam merencanakan, melaksanakan, dan melestarikan hasil pembangunan." link="#" linkLabel="Laporan Pembangunan" lebarFoto="w-40 sm:w-44 md:w-52" />
+            <x-institution-card nama="LPMD" subjudul="Lembaga Pemberdayaan Masyarakat Desa" deskripsi="Mitra pemerintah dalam merencanakan, melaksanakan, dan melestarikan hasil pembangunan." link="#" linkLabel="Laporan Pembangunan" />
 
             <!-- Karang Taruna -->
             <!-- <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300 flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 md:gap-12">
@@ -262,7 +277,7 @@
                     </a>
                 </div>
             </div> -->
-            <x-institution-card nama="Karang Taruna" subjudul="Organisasi Kepemudaan" deskripsi="Wadah pengembangan generasi muda Desa Purworejo melalui kegiatan olahraga, seni, dan sosial." link="#" linkLabel="Program Kepemudaan" lebarFoto="w-40 sm:w-44 md:w-48" />
+            <x-institution-card nama="Karang Taruna" subjudul="Organisasi Kepemudaan" deskripsi="Wadah pengembangan generasi muda Desa Purworejo melalui kegiatan olahraga, seni, dan sosial." link="#" linkLabel="Program Kepemudaan" />
         </div>
     </div>
 </section>
