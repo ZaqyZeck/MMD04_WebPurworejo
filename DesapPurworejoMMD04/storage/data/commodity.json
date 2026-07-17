@@ -1,0 +1,36 @@
+{
+  "commodity": [
+    {
+      "id": 1,
+      "ikon": "🌾",
+      "judul": "Padi Premium",
+      "deskripsi": "Padi varietas unggul dengan tekstur pulen dan aroma khas, dipanen 3 kali setahun.",
+      "warna": "hijau",
+      "link": "/potensi"
+    },
+    {
+      "id": 2,
+      "ikon": "🌽",
+      "judul": "Jagung Manis",
+      "deskripsi": "Penghasil jagung pipil kualitas ekspor untuk kebutuhan industri pakan dan pangan.",
+      "warna": "orange",
+      "link": "/potensi"
+    },
+    {
+      "id": 3,
+      "ikon": "🎋",
+      "judul": "Tebu Rakyat",
+      "deskripsi": "Pemasok utama bahan baku gula nasional dengan rendemen tinggi mencapai 8%.",
+      "warna": "hijau",
+      "link": "/potensi"
+    },
+    {
+      "id": 4,
+      "ikon": "🌶️",
+      "judul": "Cabai Keriting",
+      "deskripsi": "Cabai kualitas premium dengan tingkat kepedasan stabil dan daya simpan lama.",
+      "warna": "merah",
+      "link": "/potensi"
+    }
+  ]
+}

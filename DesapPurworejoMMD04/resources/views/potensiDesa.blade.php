@@ -50,10 +50,13 @@
 {{-- ===================== STATISTIK POTENSI ===================== --}}
 <section class="bg-[#F6F3F2] py-16 px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-        <x-stat-card ikon="🏪" angka="150+" label="UMKM Aktif" />
-        <x-stat-card ikon="📐" angka="420" label="Hektar Lahan" />
-        <x-stat-card ikon="🌾" angka="12" label="Produk Unggulan" />
-        <x-stat-card ikon="📈" angka="85%" label="Hasil Terserap Pasar" />
+        @foreach($statistik as $item)
+            <x-stat-card
+                :ikon="$item['ikon']"
+                :angka="$item['angka']"
+                :label="$item['label']"
+            />
+        @endforeach
     </div>
 </section>
 
@@ -66,14 +69,15 @@
             warnaJudul="text-[#0D6B1E]"
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <x-potensi.commodity-card ikon="🌾" judul="Padi Premium" warna="hijau"
-                deskripsi="Padi varietas unggul dengan tekstur pulen dan aroma khas, dipanen 3 kali setahun." />
-            <x-potensi.commodity-card ikon="🌽" judul="Jagung Manis" warna="orange"
-                deskripsi="Penghasil jagung pipil kualitas ekspor untuk kebutuhan industri pakan dan pangan." />
-            <x-potensi.commodity-card ikon="🎋" judul="Tebu Rakyat" warna="hijau"
-                deskripsi="Pemasok utama bahan baku gula nasional dengan rendemen tinggi mencapai 8%." />
-            <x-potensi.commodity-card ikon="🌶️" judul="Cabai Keriting" warna="merah"
-                deskripsi="Cabai kualitas premium dengan tingkat kepedasan stabil dan daya simpan lama." />
+            @foreach($commodity as $item)
+                <x-potensi.commodity-card
+                    :ikon="$item['ikon']"
+                    :judul="$item['judul']"
+                    :deskripsi="$item['deskripsi']"
+                    :warna="$item['warna']"
+                    :link="$item['link']"
+                />
+            @endforeach
         </div>
     </div>
 </section>
@@ -102,18 +106,18 @@
             </div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <x-potensi.umkm-card x-show="filter === 'semua' || filter === 'kuliner'"
-                foto="images/foto.png" kategori="Kuliner" judul="Keripik Purwo Joyo"
-                deskripsi="Keripik singkong renyah dengan bumbu rempah pilihan tanpa pengawet."
-                labelTombol="💬 WhatsApp" warnaTombol="hijau" link="#" />
-            <x-potensi.umkm-card x-show="filter === 'semua' || filter === 'kerajinan'"
-                foto="images/foto.png" kategori="Kerajinan" judul="Anyaman Bambu Lestari"
-                deskripsi="Produk perabot dan dekorasi rumah dari bambu dengan desain kontemporer."
-                labelTombol="📷 Instagram" warnaTombol="instagram" link="#" />
-            <x-potensi.umkm-card x-show="filter === 'semua' || filter === 'fashion'"
-                foto="images/foto.png" kategori="Fashion" judul="Batik Purworejo Modern"
-                deskripsi="Batik tulis dengan motif kontemporer yang elegan untuk berbagai suasana."
-                labelTombol="🛒 Tokopedia" warnaTombol="tokopedia" link="#" />
+            @foreach($umkm as $item)
+                <x-potensi.umkm-card
+                    x-show="filter === 'semua' || filter === '{{ strtolower($item['kategori']) }}'"
+                    :foto="$item['foto']"
+                    :kategori="$item['kategori']"
+                    :judul="$item['judul']"
+                    :deskripsi="$item['deskripsi']"
+                    :labelTombol="$item['labelTombol']"
+                    :warnaTombol="$item['warnaTombol']"
+                    :link="$item['link']"
+                />
+            @endforeach
         </div>
     </div>
 </section>
@@ -125,15 +129,17 @@
             judul="Destinasi Wisata"
         />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <x-potensi.wisata-card foto="images/foto.png" badge="Nature Tourism"
-                judul="Grojogan Sewu Purwo"
-                deskripsi="Nikmati kesejukan air pegunungan dan panorama hutan pinus yang asri." link="#" />
-            <x-potensi.wisata-card foto="images/foto.png" badge="Educational"
-                judul="Taman Edukasi Tani"
-                deskripsi="Ajak anak-anak belajar bercocok tanam langsung bersama petani lokal." link="#" />
-            <x-potensi.wisata-card foto="images/foto.png" badge="Agrowisata"
-                judul="Kebun Buah Purworejo"
-                deskripsi="Rasakan sensasi memetik buah segar langsung dari pohonnya." link="#" />
+            @foreach($wisata as $item)
+                <x-potensi.wisata-card
+                    :foto="$item['foto']"
+                    :kategori="$item['kategori']"
+                    :judul="$item['judul']"
+                    :deskripsi="$item['deskripsi']"
+                    :labelTombol="$item['labelTombol']"
+                    :warnaTombol="$item['warnaTombol']"
+                    :link="$item['link']"
+                />
+            @endforeach
         </div>
     </div>
 </section>
@@ -143,18 +149,17 @@
     <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-[#0D6B1E] mb-12">Kebudayaan Lokal</h2>
         <div class="space-y-14">
-            <x-potensi.culture-card
-                foto="images/foto.png"
-                badge="Seni Pertunjukan" ikonBadge="🎭"
-                judul="Jaranan Purwo Budoyo"
-                deskripsi="Kesenian tradisional yang melambangkan keberanian dan semangat gotong royong warga desa. Rutin dipentaskan setiap bulan purnama di balai desa."
-                link="#" :balik="false" />
-            <x-potensi.culture-card
-                foto="images/foto.png"
-                badge="Festival Tahunan" ikonBadge="🎉"
-                judul="Bersih Desa & Kirab Budaya"
-                deskripsi="Perayaan rasa syukur atas hasil panen yang melimpah dengan arak-arakan hasil bumi dan doa bersama seluruh warga desa."
-                link="#" :balik="true" />
+            @foreach($culture as $item)
+                <x-potensi.culture-card
+                    :foto="$item['foto']"
+                    :badge="$item['badge']"
+                    :ikonBadge="$item['ikonBadge']"
+                    :judul="$item['judul']"
+                    :deskripsi="$item['deskripsi']"
+                    :link="$item['link']"
+                    :balik="$item['balik']"
+                />
+            @endforeach
         </div>
     </div>
 </section>
@@ -164,19 +169,11 @@
     <div class="max-w-6xl mx-auto">
         <x-section-header judul="Galeri Kegiatan" warnaJudul="text-[#0D6B1E]"/>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            @foreach([
-                ['src' => 'images/foto.png', 'alt' => 'Panen Raya'],
-                ['src' => 'images/foto.png', 'alt' => 'Jalan Desa'],
-                ['src' => 'images/foto.png', 'alt' => 'Irigasi Sawah'],
-                ['src' => 'images/foto.png', 'alt' => 'UMKM Kuliner'],
-                ['src' => 'images/foto.png', 'alt' => 'Musyawarah Warga'],
-                ['src' => 'images/foto.png', 'alt' => 'Syukuran Desa'],
-            ] as $foto)
-            <div class="group relative overflow-hidden rounded-xl h-48 md:h-56 cursor-pointer">
-                <img src="{{ asset($foto['src']) }}" alt="{{ $foto['alt'] }}"
-                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300"></div>
-            </div>
+            @foreach($gallery as $item)
+                <x-potensi.gallery-card
+                    :foto="$item['foto']"
+                    :alt="$item['alt']"
+                />
             @endforeach
         </div>
     </div>

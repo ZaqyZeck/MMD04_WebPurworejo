@@ -1,0 +1,28 @@
+{
+  "statistik": [
+    {
+      "id": 1,
+      "ikon": "🏪",
+      "angka": "150+",
+      "label": "UMKM Aktif"
+    },
+    {
+      "id": 2,
+      "ikon": "📐",
+      "angka": "420",
+      "label": "Hektar Lahan"
+    },
+    {
+      "id": 3,
+      "ikon": "🌾",
+      "angka": "12",
+      "label": "Produk Unggulan"
+    },
+    {
+      "id": 4,
+      "ikon": "📈",
+      "angka": "85%",
+      "label": "Hasil Terserap Pasar"
+    }
+  ]
+}

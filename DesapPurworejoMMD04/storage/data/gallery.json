@@ -1,0 +1,28 @@
+{
+    "gallery": [
+        {
+            "foto": "images/foto.png",
+            "alt": "Panen Raya"
+        },
+        {
+            "foto": "images/foto.png",
+            "alt": "Jalan Desa"
+        },
+        {
+            "foto": "images/foto.png",
+            "alt": "Irigasi Sawah"
+        },
+        {
+            "foto": "images/foto.png",
+            "alt": "UMKM Kuliner"
+        },
+        {
+            "foto": "images/foto.png",
+            "alt": "Musyawarah Warga"
+        },
+        {
+            "foto": "images/foto.png",
+            "alt": "Syukuran Desa"
+        }
+    ]
+}

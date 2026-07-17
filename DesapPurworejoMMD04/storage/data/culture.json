@@ -1,0 +1,24 @@
+{
+  "culture": [
+    {
+      "id": 1,
+      "foto": "images/foto.png",
+      "badge": "Seni Pertunjukan",
+      "ikonBadge": "🎭",
+      "judul": "Jaranan Purwo Budoyo",
+      "deskripsi": "Kesenian tradisional yang melambangkan keberanian dan semangat gotong royong warga desa. Rutin dipentaskan setiap bulan purnama di balai desa.",
+      "link": "#",
+      "balik": false
+    },
+    {
+      "id": 2,
+      "foto": "images/foto.png",
+      "badge": "Festival Tahunan",
+      "ikonBadge": "🎉",
+      "judul": "Bersih Desa & Kirab Budaya",
+      "deskripsi": "Perayaan rasa syukur atas hasil panen yang melimpah dengan arak-arakan hasil bumi dan doa bersama seluruh warga desa.",
+      "link": "#",
+      "balik": true
+    }
+  ]
+}

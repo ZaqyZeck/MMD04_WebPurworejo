@@ -1,0 +1,34 @@
+{
+  "umkm": [
+    {
+      "id": 1,
+      "foto": "images/foto.png",
+      "kategori": "Kuliner",
+      "judul": "Keripik Purwo Joyo",
+      "deskripsi": "Keripik singkong renyah dengan bumbu rempah pilihan tanpa pengawet.",
+      "labelTombol": "💬 WhatsApp",
+      "warnaTombol": "hijau",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "foto": "images/foto.png",
+      "kategori": "Kerajinan",
+      "judul": "Anyaman Bambu Lestari",
+      "deskripsi": "Produk perabot dan dekorasi rumah dari bambu dengan desain kontemporer.",
+      "labelTombol": "📷 Instagram",
+      "warnaTombol": "instagram",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "foto": "images/foto.png",
+      "kategori": "Fashion",
+      "judul": "Batik Purworejo Modern",
+      "deskripsi": "Batik tulis dengan motif kontemporer yang elegan untuk berbagai suasana.",
+      "labelTombol": "🛒 Tokopedia",
+      "warnaTombol": "tokopedia",
+      "link": "#"
+    }
+  ]
+}
