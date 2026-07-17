@@ -6,7 +6,7 @@
     'tags' => [],
     'link' => '#',
     'linkLabel' => 'Selengkapnya',
-    'lebarFoto' => 'w-40 sm:w-52 md:w-60',
+    'lebarFoto' => 'w-40 sm:w-44 md:w-52',
 ])
 
 <div class="flex-1 p-6 sm:p-8 md:p-12 bg-stone-100 rounded-xl outline outline-1 outline-stone-300
