@@ -119,11 +119,21 @@
 
             <!-- Row 1: Kasi -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-                <x-member-card foto="images/foto.png" warna="hijau" nama="Radyan Mifta R." jabatan="Kasi Pemerintahan"/>
-
-                <x-member-card foto="images/foto.png" warna="hijau" nama="Catur Waluyo" jabatan="Kasi Kesejahteraan"/>
-
-                <x-member-card foto="images/foto.png" warna="hijau" nama="Ezhandwhi Arie" jabatan="Kasi Pelayanan"/>
+                @php
+                    $members = [
+                        ['foto' => 'images/foto.png', 'warna' => 'hijau', 'nama' => 'Radyan Mifta R.', 'jabatan' => 'Kasi Pemerintahan'],
+                        ['foto' => 'images/foto.png', 'warna' => 'hijau', 'nama' => 'Catur Waluyo', 'jabatan' => 'Kasi Kesejahteraan'],
+                        ['foto' => 'images/foto.png', 'warna' => 'hijau', 'nama' => 'Ezhandwhi Arie', 'jabatan' => 'Kasi Pelayanan'],
+                    ];
+                @endphp
+                @foreach($members as $member)
+                    <x-member-card
+                        :foto="$member['foto']"
+                        :warna="$member['warna']"
+                        :nama="$member['nama']"
+                        :jabatan="$member['jabatan']"
+                    />
+                @endforeach
 
             </div>
 
@@ -134,12 +144,21 @@
 
             <!-- Row 2: Kaur -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-                <x-member-card foto="images/foto.png" warna="biru" nama="Ayu Nila Sari" jabatan="Kaur TU & Umum"/>
-
-                <x-member-card foto="images/foto.png" warna="biru" nama="Evi Yuni Fitriana" jabatan="Kaur Keuangan"/>
-
-                <x-member-card foto="images/foto.png" warna="biru" nama="Andik Eko Untoro" jabatan="Kaur Perencanaan"/>
-
+                @php
+                    $members = [
+                        ['foto' => 'images/foto.png', 'warna' => 'biru', 'nama' => 'Ayu Nila Sari', 'jabatan' => 'Kaur TU & Umum'],
+                        ['foto' => 'images/foto.png', 'warna' => 'biru', 'nama' => 'Evi Yuni Fitriana', 'jabatan' => 'Kaur Keuangan'],
+                        ['foto' => 'images/foto.png', 'warna' => 'biru', 'nama' => 'Andik Eko Untoro', 'jabatan' => 'Kaur Perencanaan'],
+                    ];
+                @endphp
+                @foreach($members as $member)
+                    <x-member-card
+                        :foto="$member['foto']"
+                        :warna="$member['warna']"
+                        :nama="$member['nama']"
+                        :jabatan="$member['jabatan']"
+                    />
+                @endforeach
             </div>
 
             <!-- Connector Line -->
@@ -149,14 +168,24 @@
 
             <!-- Row 3: Kamituwo -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-                <x-member-card foto="images/foto.png" warna="kuning" nama="Wahyudiono" jabatan="Kamituwo Dusun Sumberdadi" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
-                
-                <x-member-card foto="images/foto.png" warna="kuning" nama="Iswanto" jabatan="Kamituwo Dusun Sumberurip" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
-
-                <x-member-card foto="images/foto.png" warna="kuning" nama="Prasetyadi" jabatan="Kamituwo Dusun Sumberasri" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
-
-                <x-member-card foto="images/foto.png" warna="kuning" nama="Sutrisno" jabatan="Kamituwo Dusun Sumberejo" lebarCard="p-4 sm:p-6" lebarFoto="w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4"/>
-
+                @php
+                    $members = [
+                        ['foto' => 'images/foto.png', 'warna' => 'kuning', 'nama' => 'Wahyudiono', 'jabatan' => 'Kamituwo Dusun Sumberdadi', 'lebarCard' => 'p-4 sm:p-6', 'lebarFoto' => 'w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4'],
+                        ['foto' => 'images/foto.png', 'warna' => 'kuning', 'nama' => 'Iswanto', 'jabatan' => 'Kamituwo Dusun Sumberurip', 'lebarCard' => 'p-4 sm:p-6', 'lebarFoto' => 'w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4'],
+                        ['foto' => 'images/foto.png', 'warna' => 'kuning', 'nama' => 'Prasetyadi', 'jabatan' => 'Kamituwo Dusun Sumberasri', 'lebarCard' => 'p-4 sm:p-6', 'lebarFoto' => 'w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4'],
+                        ['foto' => 'images/foto.png', 'warna' => 'kuning', 'nama' => 'Sutrisno', 'jabatan' => 'Kamituwo Dusun Sumberejo', 'lebarCard' => 'p-4 sm:p-6', 'lebarFoto' => 'w-16 h-16 sm:w-20 sm:h-20 mb-3 sm:mb-4'],
+                    ];
+                @endphp
+                @foreach($members as $member)
+                    <x-member-card
+                        :foto="$member['foto']"
+                        :warna="$member['warna']"
+                        :nama="$member['nama']"
+                        :jabatan="$member['jabatan']"
+                        :lebarCard="$member['lebarCard']"
+                        :lebarFoto="$member['lebarFoto']"
+                    />
+                @endforeach
             </div>
         </div>
     </div>
@@ -182,11 +211,23 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <x-directory-card rw="RW 01" dusun="Dusun Purwosari" ketua="Bp. Ahmad Junaedi" telepon="0812-3456-XXXX" rt="4 RT Terintegrasi" />
-
-            <x-directory-card rw="RW 02" dusun="Dusun Mulyosari" ketua="Bp. Kusuma Atmaja" telepon="0821-4567-XXXX" rt="5 RT Terintegrasi" />
-
-            <x-directory-card rw="RW 03" dusun="Dusun Rejoagung" ketua="Bp. Hendro Sasmito" telepon="0857-7890-XXXX" rt="6 RT Terintegrasi" :span="true" />
+            @php
+            $directories = [
+                ['rw' => 'RW 01', 'dusun' => 'Dusun Purwosari', 'ketua' => 'Bp. Ahmad Junaedi', 'telepon' => '0812-3456-XXXX', 'rt' => '4 RT Terintegrasi', 'span' => false],
+                ['rw' => 'RW 02', 'dusun' => 'Dusun Mulyosari', 'ketua' => 'Bp. Kusuma Atmaja', 'telepon' => '0821-4567-XXXX', 'rt' => '5 RT Terintegrasi', 'span' => false],
+                ['rw' => 'RW 03', 'dusun' => 'Dusun Rejoagung', 'ketua' => 'Bp. Hendro Sasmito', 'telepon' => '0857-7890-XXXX', 'rt' => '6 RT Terintegrasi', 'span' => true],
+            ];
+            @endphp
+            @foreach($directories as $directory)
+                <x-directory-card
+                    :rw="$directory['rw']"
+                    :dusun="$directory['dusun']"
+                    :ketua="$directory['ketua']"
+                    :telepon="$directory['telepon']"
+                    :rt="$directory['rt']"
+                    :span="$directory['span']"
+                />
+            @endforeach
         </div>
     </div>
 </section>
